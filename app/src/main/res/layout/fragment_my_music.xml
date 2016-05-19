@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/ListView_my_music_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayout_my_music_fragment"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_my_music_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#2d2c2c"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/iv_music_my_music_fragment"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/app_logo2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_SongName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="歌名"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="歌手"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_playmusic"
+                android:src="@mipmap/player_btn_play_normal"/>
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_nextmusic"
+                android:src="@mipmap/player_btn_next_normal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

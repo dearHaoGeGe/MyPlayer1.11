@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyPlayer</string>
+    <string name="action_contact">Contact</string>
+    <string name="random_play">随机播放</string>
+    <string name="single_play">单曲循环播放</string>
+    <string name="order_play">顺序播放</string>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9C9C9"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/player_btn_next_normal" />
+
+    <ImageView
+        android:id="@+id/iv_play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_next"
+        android:layout_toLeftOf="@+id/iv_next"
+        android:src="@mipmap/player_btn_play_normal"/>
+
+    <ImageView
+        android:id="@+id/tv_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_play_pause"
+        android:layout_toLeftOf="@+id/iv_play_pause"
+        android:src="@mipmap/player_btn_pre_normal"/>
+
+    <ImageView
+        android:id="@+id/iv_play_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/order"/>
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_play_mode"
+        android:layout_alignLeft="@+id/iv_play_mode"
+        android:layout_marginBottom="10dp"
+        android:text="00:00"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_start_time"
+        android:layout_alignRight="@+id/iv_next"
+        android:text="00:00"
+        android:textColor="@android:color/darker_gray"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_start_time"
+        android:layout_alignParentLeft="true"
+        android:indeterminate="false"/>
+
+    <ImageView
+        android:id="@+id/iv_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/app_logo2"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="歌 曲"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
